@@ -1,0 +1,246 @@
+/*css resat*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*css variabels*/
+:root{
+    --navbar-hight: 59px:
+}
+
+/*Navigation bar*/
+nav#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/*Navigation bar: logo and image*/
+nav#navbar div#logo{
+    margin: 10px 4px;
+
+}
+
+nav#navbar div#logo img{
+    height: 59px;
+    margin: 3px 6px 
+
+}
+
+/*Navigation bar: list style*/
+
+nav#navbar::before{
+    content: "";
+    background-color : black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+nav#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+nav#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+nav#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/* home section */
+section#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+section#home::before{
+    content: "";
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg);
+    position:absolute;
+    height: 350px;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+section#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+section#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+section#home button.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Services Section */
+section#services-container div#services{
+    margin: 34px;
+    display: flex;
+}
+section#services-container div#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+section#services-container div#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+section#services-container div#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+/* clients-section */
+
+
+section#clients-section{
+    height: 344px;
+    position: relative;
+}
+
+section#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2023/06/20/17/30/youtube-banner-8077450_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+section#clients-section div#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#clients-section div#clients div#clients-item{
+    padding: 34px;
+}
+
+section#clients-section div#clients div#clients-item img{
+    height: 124px;
+}
+
+/* Contact Section */
+section#contact{
+    position: relative;
+}
+section#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_640.jpg) no-repeat center center/cover;
+
+}
+section#contact div#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+section#contact div#contact-box input, 
+section#contact div#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+section#contact div#contact-box form{
+    width: 40%;
+}
+
+section#contact div#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+h1 #h-primary center{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
